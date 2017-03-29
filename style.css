@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2017, 09:34:21 PM
+    Author     : Inspiron I5558
+*/
+
+AnchorPane {
+    -fx-background-color: #333333;
+    -fx-padding: 0 0 0 0;
+}
+SplitPane {
+   -fx-background-color: transparent;
+   -fx-border-color:  transparent;
+   -fx-padding: 0 1 0 1;
+}
+
+.split-pane-divider {
+   -fx-background-color: transparent;
+   -fx-padding: 0 0 0 0;
+}
+Button {
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 14 37 14 37;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: monospace;
+}
+.orange {
+    -fx-background-color: #000000, linear-gradient(#ff5400, #be1d00);
+}
+.operador {
+    -fx-background-color: #000000, linear-gradient(#52A839, #548246);
+}
