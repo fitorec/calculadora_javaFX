@@ -58,10 +58,15 @@ public class Evaluar {
     */
     private static int realizarOperacion(String operador){
         printElements();
-        for(int i=1; i<elements.size(); i++){
+        for(int i=0; i<elements.size(); i++){
             String element = elements.get(i);
             if (!element.equals(operador)){
                 continue;
+            }
+            //Caso especial, la expesión inicia con un número negativo
+            if (i==0 && operador.equals("-")){
+                i = 1;
+                elements.add(0, "0");
             }
             Double op1 = Double.valueOf(elements.get(i-1));
             Double op2 = Double.valueOf(elements.get(i+1));
